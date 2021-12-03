@@ -13,7 +13,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: sudo apt install node
+      - run: pwd
+      - run: sudo apt install nodejs npm
       - run: npm install
       - run: npm start
       - run: npm cypress run
