@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: pwd
+      - run: ls
       - run: sudo apt install nodejs npm
       - run: npm install
       - run: npm start
