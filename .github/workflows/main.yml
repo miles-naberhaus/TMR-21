@@ -13,7 +13,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: cd ../../
+      - uses: actions/checkout@v2
       - run: npm install
       - run: npm start
       - run: npx cypress run
